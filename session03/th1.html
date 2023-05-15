@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form mua ô tô</title>
+</head>
+<body>
+    <h2>Đăng ký mua xe ô tô</h2>
+    <form action="#" method="post">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" placeholder="Tên của bạn"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email cùa bạn"><br>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone" placeholder="Số điện thoại của bạn"><br>
+
+        <label for="tenxe">Xe ô tô muốn mua:</label>
+        <input type="text" id="tenxe" name="tenxe" list="listxe" placeholder="Mẫu xe">
+        <datalist id="listxe">
+            <option value="Mer">Mercedes</option>
+            <option value="Por">Porsche</option>
+            <option value="Lam">Lamborghini</option>
+        </datalist>
+        <label for="mess">Lời nhắn:</label><br>
+        <textarea name="mess" id="mess" cols="30" rows="5"></textarea><br>
+        <label for="mauxe">Màu xe:</label>
+        <select id="mauxe">
+            <option value="red">Đỏ</option>
+            <option value="yellow">Vàng</option>
+            <option value="blue">Xanh</option>
+            
+
+        </select>
+        <fieldset>
+            <legend>Phương thức thanh toán</legend>
+            <input type="radio" id="the" name="pay">
+            <label for="the">Thẻ tín dụng</label><br>
+            <input type="radio" id="chuyenkhoan" name="pay" >
+            <label for="chuyenkhoan">Chuyển khoản ngân hàng</label>
+        </fieldset><br>
+    
+        <label for="">Tôi đồng ý với các điều khoản:</label>
+        <input type="checkbox" id="agree" name="agree" value="yes"><br>
+        <input type="submit" value="Gửi">
+
+
+
+
+    </form>
+</body>
+</html>
